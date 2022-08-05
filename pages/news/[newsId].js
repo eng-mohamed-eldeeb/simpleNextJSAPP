@@ -1,13 +1,17 @@
-import {useRouter} from  'next/router'
+import { useRouter } from "next/router";
+import Link from "next/link";
 
 // domain.com//news/somthing
 
 function Somthing() {
-    const router = useRouter();
-    const newsId = router.query.newsId;
-
-    
-    return <h1>somthing page</h1>
+  return (
+    <>
+      <h1>Some where</h1>
+      <p>
+        <Link href="/">go home</Link>
+      </p>
+    </>
+  );
 }
 
-export default Somthing
+export default Somthing;
